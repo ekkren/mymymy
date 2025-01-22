@@ -43,26 +43,26 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.panel} id={styles.panel1}>
         <div className={styles.centeredContent}>
-          <h1>{time}</h1>
-          <h2>{date}</h2>
+          <h1 className={styles.heading1}>{time}</h1>
+          <h2 className={styles.heading2}>{date}</h2>
         </div>
       </div>
       <div className={styles.panel} id={styles.panel2}>
         <div className={styles.centeredContent}>
-          <h1>Anlık Hava Durumu</h1>
+          <h1 className={styles.heading1}>Anlık Hava Durumu</h1>
           {weather && (
-            <h2>{weather.main.temp}°C, {weather.weather[0].description}</h2>
+            <h2 className={styles.heading2}>{weather.main.temp}°C, {weather.weather[0].description}</h2>
           )}
         </div>
       </div>
       <div className={styles.panel} id={styles.panel3}>
         <div className={styles.centeredContent}>
-          <h1>5 Günlük Hava Tahmini</h1>
+          <h1 className={styles.heading1}>5 Günlük Hava Tahmini</h1>
           <div className={styles.forecast}>
             {forecast.map((day, index) => (
               <div key={index} className={styles.forecastItem}>
-                <h2>{new Date(day.dt_txt).toLocaleDateString('tr-TR')}</h2>
-                <h3>{day.main.temp}°C</h3>
+                <h2 className={styles.heading2}>{new Date(day.dt_txt).toLocaleDateString('tr-TR')}</h2>
+                <h3 className={styles.heading3}>{day.main.temp}°C</h3>
               </div>
             ))}
           </div>
