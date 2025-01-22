@@ -1,0 +1,48 @@
+.container {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+}
+
+.panel {
+  background-color: #f8c8dc; /* pastel pink */
+  margin-bottom: 10px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#panel1 {
+  flex-basis: 65%;
+}
+
+#panel2 {
+  flex-basis: 35%;
+}
+
+#panel3 {
+  flex-basis: 35%;
+  height: 35%;
+}
+
+.centeredContent {
+  text-align: center;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecastItem {
+  margin: 0 5px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
