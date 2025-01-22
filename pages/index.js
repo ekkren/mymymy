@@ -24,7 +24,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      const apiKey = 'YOUR_OPENWEATHER_API_KEY';
+      const apiKey = '6d30af576b130ae10b25618e024fc6a1';
       const city = 'Istanbul';
       const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
       const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
